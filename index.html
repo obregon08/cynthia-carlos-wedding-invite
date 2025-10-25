@@ -62,22 +62,23 @@
         </section>
 
         <!-- Ceremony & Reception Info -->
-        <section class="ceremony-info">
-            <div class="ceremony-content">
-                <div class="church-icon">⛪</div>
-                <h2>CEREMONIA & RECEPCIÓN</h2>
+        <section class="ceremony-info" id="ceremony-info">
+        <div class="ceremony-content">
+            <div class="house-icon">
+                <img src="images/house-sketch.png" alt="House with Heart" />
+            </div>
+            <h2>CEREMONIA & RECEPCIÓN</h2>
                 <p class="time">HORA: 7:00 PM</p>
-
+                <img src="images/villa-isabela.png" alt="Villa Isabela" />
                 <div class="venue-info">
-                    <p class="venue-type">Salon de Eventos</p>
-                    <p class="venue-name">"Villa Isabela"</p>
+                    <p class="venue-name">Villa Isabela</p>
                 </div>
 
                 <div class="location-info">
                     <p class="location">Montecristi, República Dominicana</p>
                 </div>
 
-                <button class="map-button">CLICK PARA VER EL MAPA</button>
+                <a href="https://maps.app.goo.gl/QtiFfP6sAcYxdtDL8" target="_blank" class="map-button">CLICK PARA VER EL MAPA</a>
             </div>
         </section>
 
@@ -85,7 +86,8 @@
         <section class="countdown-section">
             <div class="countdown-container">
                 <div class="countdown-timer">
-                    <p class="countdown-label">FALTAN</p>
+                    <p class="countdown-label">
+                        <b>FALTAN</b></p>
                     <div class="timer-display">
                         <div class="time-unit">
                             <span class="time-number" id="days">000</span>
@@ -216,7 +218,7 @@
                 const minutes = Math.floor((timeLeft % (1000 * 60 * 60)) / (1000 * 60));
                 const seconds = Math.floor((timeLeft % (1000 * 60)) / 1000);
 
-                document.getElementById('days').textContent = days.toString().padStart(3, '0');
+                document.getElementById('days').textContent = days.toString().padStart(2, '0');
                 document.getElementById('hours').textContent = hours.toString().padStart(2, '0');
                 document.getElementById('minutes').textContent = minutes.toString().padStart(2, '0');
                 document.getElementById('seconds').textContent = seconds.toString().padStart(2, '0');
