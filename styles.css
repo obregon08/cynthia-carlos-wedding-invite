@@ -53,7 +53,7 @@ section:last-child {
 /* Hero Section */
 .hero {
     position: relative;
-    height: 100vh;
+    height: 90vh;
     background: linear-gradient(135deg, #8B9A7A 0%, #7C8070 100%);
     display: flex;
     align-items: center;
@@ -500,7 +500,7 @@ section:last-child {
     font-family: 'Imperial Script', cursive;
     font-size: 3rem;
     margin-bottom: 15px;
-    color: #E0E0D8;
+    color: #FFF;
 }
 
 .envelope-icon {
@@ -522,6 +522,20 @@ section:last-child {
     width: 200px;
     margin: 0 auto;
     position: relative;
+}
+
+.bank-logo {
+    margin-bottom: 15px;
+    display: flex;
+    /* justify-content: center; */
+    align-items: center;
+}
+
+.bank-logo img {
+    height: 60px;
+    border-radius: 8px;
+    background-color: white;
+    padding: 8px;
 }
 
 .card-chip {
@@ -546,7 +560,8 @@ section:last-child {
 .account-number {
     color: white;
     font-size: 0.8rem;
-    font-family: 'Inter', monospace;
+    font-family: 'Roboto Mono', 'Menlo', 'Consolas', monospace;
+    letter-spacing: 2px;
 }
 
 /* Dress Code */
@@ -556,7 +571,6 @@ section:last-child {
     display: flex;
     justify-content: center;
     align-items: center;
-    min-height: 100vh;
 }
 
 .dress-code-card {
@@ -567,6 +581,7 @@ section:last-child {
     text-align: center;
     box-shadow: 0 10px 30px rgba(0,0,0,0.1);
     transform: rotate(-2deg);
+    margin: 80px auto;
 }
 
 .dress-code-card h2 {
@@ -594,7 +609,7 @@ section:last-child {
 .men-requirements h3,
 .women-requirements h3 {
     font-family: 'Imperial Script', cursive;
-    font-size: 1.3rem;
+    font-size: 2rem;
     color: #333;
     margin-bottom: 10px;
 }
@@ -662,16 +677,18 @@ section:last-child {
 
 .event-label {
     font-family: 'Imperial Script', cursive;
-    font-size: 1.6rem;
-    margin-bottom: 10px;
-    color: #E0E0D8;
+    font-size: 5rem;
+    margin-bottom: 0px;
+    color: #FFF;
+    line-height: 1em;
 }
 
 .adults-title {
-    font-size: 1.3rem;
+    font-size: 0.9rem;
     font-weight: 600;
-    margin-bottom: 30px;
-    letter-spacing: 1px;
+    color: #FFF;
+    margin-bottom: 60px;
+    letter-spacing: 0.5px;
 }
 
 .adults-message {
@@ -687,10 +704,9 @@ section:last-child {
 /* RSVP Section */
 .rsvp-section {
     background-color: #7C8070;
-    padding: 60px 20px;
+    padding: 80px 20px;
     text-align: center;
     color: white;
-    min-height: 100vh;
     display: flex;
     align-items: center;
     justify-content: center;
@@ -702,7 +718,7 @@ section:last-child {
 }
 
 .browser-icon {
-    margin-bottom: 40px;
+    margin-bottom: 20px;
 }
 
 .browser-window {
@@ -776,6 +792,39 @@ section:last-child {
 
 .rsvp-text p {
     margin-bottom: 5px;
+}
+
+.rsvp-whatsapp {
+    font-size: 1rem;
+    font-weight: 500;
+    line-height: 1.6;
+    margin-top: 30px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 15px;
+}
+
+.rsvp-whatsapp a {
+    color: #25D366;
+    text-decoration: none;
+    font-weight: 600;
+    transition: color 0.3s ease;
+}
+
+.rsvp-whatsapp a:hover {
+    color: #128C7E;
+}
+
+.rsvp-whatsapp img {
+    width: 40px;
+    height: 40px;
+    border-radius: 50%;
+    transition: transform 0.3s ease;
+}
+
+.rsvp-whatsapp img:hover {
+    transform: scale(1.1);
 }
 
 /* Smooth scrolling */
